@@ -1,0 +1,15 @@
+const qrcode=require('qrcode')
+
+const generateQr=async (text)=>{
+    try{
+        const qr=await qrcode.toFile('./Qrcode/shani.jpg',text)
+        console.log(qr,text);
+    }catch(error){
+        console.log(error);
+    }
+}
+
+generateQr('Shani')
+
+//toDateUrl
+//toString
